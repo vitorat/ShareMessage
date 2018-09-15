@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Share Message</string>
+    <string name="settings">Configurações</string>
+    <string name="send_message">Enviar mensagem</string>
 </resources>

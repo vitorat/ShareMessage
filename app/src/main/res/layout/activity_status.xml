@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StatusActivity">
+
+<Button
+    android:id="@+id/enviarMsg"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginEnd="20dp"
+    android:layout_marginTop="20dp"
+    android:background="@color/colorPrimary"
+    android:textColor="@color/white"
+    android:text="Enviar" />
+
+<EditText
+    android:id="@+id/mensagem"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/enviarMsg"
+    android:width="100in"
+    android:height="100in"
+    android:layout_margin="20dp"
+    android:gravity="top"
+    android:hint="O que você está pensando?"
+    android:inputType="textMultiLine"
+    android:maxLength="140"
+    android:textAppearance="@style/TextAppearance.AppCompat" />
+
+<TextView
+    android:id="@+id/caracteres"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/enviarMsg"
+    android:layout_alignParentStart="true"
+    android:layout_marginStart="20dp"
+    android:text="140" />
+</RelativeLayout>
